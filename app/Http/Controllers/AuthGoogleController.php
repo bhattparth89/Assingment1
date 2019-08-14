@@ -37,10 +37,10 @@ class AuthGoogleController extends Controller
                 $user->save();
                 Auth::loginUsingId($user->id);
             }
-            return redirect()->to('/home');
+            return redirect()->to('/upload-image');
         } 
         catch (Exception $e) {
-            return 'error';
+            return 'Check Gmail API ?';
         }
     }
 }

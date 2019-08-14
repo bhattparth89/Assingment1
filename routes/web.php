@@ -20,7 +20,8 @@ Auth::routes();
 Route::get('/redirect', 'AuthGoogleController@redirect');
 Route::get('/callback', 'AuthGoogleController@callback');
 
-
+Route::get('/upload-image','FileController@index');
+Route::post('/upload-image',['as'=>'image.upload','uses'=>'FileController@uploadImages']);
 
 
 Route::get('/home', 'HomeController@index')->name('Home');
