@@ -15,9 +15,9 @@
   } else {
 
     // Browser globals
-    factory( jQuery );
+    factory(window.jQuery);
   }
-}(function( $ ) {
+}(function($) {
 
   $.ui = $.ui || {};
 
